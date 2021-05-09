@@ -119,14 +119,14 @@ function reset() {
     resetSubmitButton.setAttribute("style", "display: none;");
     ulEl.setAttribute("style", "display: none;");
     highScores = JSON.parse(localStorage.getItem("highScores"));
-    HighScoreView = false;
+    highScoreView = false;
     inputEl.value = "";
     prompty = 2;
 }
 
 function intervals() {
     let interval = setInterval(function() {
-        if (!((questionNumber - 1) < questions.length) || HighScoreView) {
+        if (!((questionNumber - 1) < questions.length) || highScoreView) {
             timeEl.textContent = time;
             message.setAttribute("style", "display: none;");
             clearInterval(interval);
