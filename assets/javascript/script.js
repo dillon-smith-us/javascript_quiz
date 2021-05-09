@@ -248,6 +248,9 @@ function start() {
     return;
 }
 
+
+// declare event listeners
+
 startBTN.addEventListener("click", start)
 
 root.addEventListener("click", function(event) {
@@ -278,8 +281,6 @@ resetHighScore.addEventListener("click", function() {
     console.log(ulEl)
     ulEl.setAttribute("style", "display: none;");
 })
-
-// event listeners
 
 resetSubmitButton.addEventListener("click", reset);
 
