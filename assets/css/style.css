@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 87px;
+}
+
+header h3 {
+    padding: 25px;
+    font-size: 30px;
+}
+
+header button {
+    color: white;
+    padding: 20px;
+    background-color: green;
+    border: 0px solid white;
+    font-size: 15px
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin: 80px;
+}
+
+main button {
+    font-size: 25px;
+    padding: 25px;
+    margin: 25px;
+    background-color: green;
+    color: white;
+}
+
+main button:hover {
+    background-color: greenyellow;
+}
+
+.answers {
+    margin-left: 20%;
+}
+
+button:hover {
+    cursor: pointer;
+}
