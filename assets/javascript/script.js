@@ -7,6 +7,8 @@ let questions = [
     "Is Javascript case sensitive?",
     "Which event occurs when the user clicks on an HTML element?"
 ];
+
+// arrays for options of multiple choice answers
 let arrays = [[
         "<script>",
         "<js>",
@@ -35,6 +37,7 @@ let arrays = [[
     ]
 ];
 
+// the correct answers to multiple choice questions as a boolean array
 let correct = [[
         true, false, false, false
     ], [
@@ -47,6 +50,9 @@ let correct = [[
         true, false, false, false
     ]   
 ]
+
+// declaring variables
+
 let options = [
     document.createElement("BUTTON"), 
     document.createElement("BUTTON"),
