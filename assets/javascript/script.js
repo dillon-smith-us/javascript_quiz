@@ -84,7 +84,7 @@ submitButton.textContent = "submit";
 pEl.setAttribute("style", "margin-right: 10px; width: fit-content;")
 inputEl.setAttribute("style", "position: relative; left: 125px; top: -19px; height: 20px");
 submitButton.setAttribute("style", "position: relative; left: 125px; top: -19px; margin-top: 0px;");
-sectionEl.setAttribute("style", "display: none; margin: 10px; margin-left: 20%; height: 15px;");
+sectionEl.setAttribute("style", "display: none; margin: 10px; margin-left: 19%; height: 15px;");
 resetHighScore.setAttribute("style", "display: none;");
 resetSubmitButton.setAttribute("style", "display: none;");
 message.setAttribute("style", "display: block; color: yellowgreen;");
@@ -154,7 +154,7 @@ function intervals() {
 function showHighScores() {
     root.setAttribute("style", "display: block;");
     root.children[0].textContent = "Highscores";
-    root.children[0].setAttribute("style", "text-align: left; margin-left: 20%;");
+    root.children[0].setAttribute("style", "text-align: left; margin-left: 19%;");
     root.children[1].setAttribute("style", "display: none;");
     message.setAttribute("style", "display: none;");
     sectionEl.setAttribute("Style", "display: none;");
@@ -169,10 +169,10 @@ function showHighScores() {
     for (i in randomVariable) {
         ulEl.appendChild(document.createElement("li"));
         ulEl.children[i].textContent = (parseInt(i) + 1) + "." + randomVariable[i]["names"] + " - " + randomVariable[i]["scores"];
-        ulEl.setAttribute("style", "background: green; width: 50%; margin-left: 20%; margin-top 15px;")
+        ulEl.setAttribute("style", "background: green; width: 50%; margin-left: 19%; margin-top 15px;")
     }
-    resetHighScore.setAttribute("style", "display: block; margin-left: 20%; position: relative; top: -3px; 150px");
-    resetSubmitButton.setAttribute("style", "display: block: margin-left: 20%; margin-right: 20px; position: relative; top: -35px;");
+    resetHighScore.setAttribute("style", "display: block; margin-left: 19%; position: relative; top: -3px; 150px");
+    resetSubmitButton.setAttribute("style", "display: block: margin-left: 19%; margin-right: 20px; position: relative; top: -35px;");
     for (i in options) {
         options[i].setAttribute("style", "display: none;");
     }
@@ -184,15 +184,15 @@ function zero() {
     for (i in options) {
         options[i].setAttribute("style", "display: none;");
     }
-    resetSubmitButton.setAttribute("style", "display: block; margin-left: 20%;")
+    resetSubmitButton.setAttribute("style", "display: block; margin-left: 19%;")
     resetSubmitButton.textContent = "try again"
 }
 
 function initials() {
     root.children[0].textContent = ("Quiz complete.");
     root.children[1].textContent = ("Score: " + time + " points!");
-    root.children[1].setAttribute("style", "display: block; text-align: left; margin-left: 20%;")
-    sectionEl.setAttribute("style", "margin-left: 20%; margin-top: 20px; display: inline-block;")
+    root.children[1].setAttribute("style", "display: block; text-align: left; margin-left: 19%;")
+    sectionEl.setAttribute("style", "margin-left: 19%; margin-top: 20px; display: inline-block;")
     for (i in options) {
         options[i].setAttribute("style", "display: none");
     }
@@ -216,14 +216,14 @@ function answerCheck(element) {
     if ((questionNumber - 1) < questions.length) {
         if (correct[questionNumber - 1][parseInt(element.id) - 1]) {
             message.textContent = "Right! "
-            message.setAttribute("style", "display: block; text-align: left: margin-left: 20%; margin-top: 30px; padding-top: 8px; border-top: 2px solid green;");
+            message.setAttribute("style", "display: block; text-align: left: margin-left: 19%; margin-top: 30px; padding-top: 8px; border-top: 2px solid green;");
             prompty = time + 1;
         } else {
             time -= 10;
             timeEl.textContent = time + 1;
             prompty = time;
             message.textContent = "Wrong! "
-            message.setAttribute("style", "display: block; text-align: left; margin-left: 20%; margin-top: 30px; padding-top: 8px; border-top: 2px solid green;"); 
+            message.setAttribute("style", "display: block; text-align: left; margin-left: 19%; margin-top: 30px; padding-top: 8px; border-top: 2px solid green;"); 
         }
         nextQ();
     } return;
@@ -239,7 +239,7 @@ function askQ() {
 }
 
 function start() {
-    root.children[0].setAttribute("style", "align-self: flex-start; margin-left: 20%;");
+    root.children[0].setAttribute("style", "align-self: flex-start; margin-left: 19%;");
     root.children[1].setAttribute("style", "display: none;");
     root.children[2].setAttribute("style", "display: none;");
     root.setAttribute("style", "display: block;")
