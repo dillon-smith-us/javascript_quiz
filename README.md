@@ -14,4 +14,4 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 ![screen shot](https://i.ibb.co/bXryjQR/javascript-quiz-application.png)
-![logo]((https://i.ibb.co/PG4mk94/dillonsmithlogo-01.png)
+![logo](https://i.ibb.co/PG4mk94/dillonsmithlogo-01.png)
