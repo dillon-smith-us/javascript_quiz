@@ -72,7 +72,7 @@ let submitButton = document.createElement("BUTTON");
 let ulEl = document.createElement("ul")
 let message = document.createElement("p")
 let resetHighScore = document.createElement("BUTTON")
-let resetSubmitButton = document.createElement("p")
+let resetSubmitButton = document.createElement("BUTTON")
 if (JSON.parse(localStorage.getItem("highScores")) === null) {
      localStorage.setItem("highScores", JSON.stringify([]));
 }
