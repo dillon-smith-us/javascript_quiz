@@ -62,7 +62,7 @@ let time = 120;
 let questionNumber = 1;
 let randomVariable;
 let prompty = 120;
-let HighScoreView = false;
+let highScoreView = false;
 let timeEl = document.querySelector("#time");
 let displayHighScores = document.querySelector("#displayHighScores");
 let pEl = document.createElement("p");
